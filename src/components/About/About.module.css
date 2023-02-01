@@ -19,7 +19,7 @@
     position: relative;
     height: 40vh;
     width: calc(100%);
-    background: url('https://i.ibb.co/zJ7kHbN/me2.jpg') no-repeat 47%;
+    background: url('../me.jpg') no-repeat 47%;
     background-size: cover;
 }
 .aboutPhotoBorder {
@@ -36,6 +36,12 @@
     width: fit-content;
     word-break: break-word;
     padding-left: 50px;
+}
+
+@media (max-width: 600px) {
+    .aboutContent { flex-wrap: wrap }
+    .aboutRight { margin-top: 20px; padding-left: 0 }
+    .aboutLeft { width: 90% }
 }
 
 .aboutRight ul{
